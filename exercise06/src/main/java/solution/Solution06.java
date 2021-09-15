@@ -4,9 +4,6 @@ package solution;
  *  Copyright 2021 Blake Lochmandy
  */
 
-import java.util.Scanner;
-import java.time.Year;
-
 public class Solution06 {
 
     /*
@@ -26,24 +23,20 @@ public class Solution06 {
 
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("What is your current age? ");
-        String currentAgeString = input.nextLine();
-        System.out.print("At what age would you like to retire? ");
-        String retirementAgeString = input.nextLine();
+        InputClass userInfo = new InputClass();
 
-        int currentAge = Integer.parseInt(currentAgeString);
-        int retirementAge = Integer.parseInt(retirementAgeString);
+        userInfo.currentAgeStringInput();
+        userInfo.retirementAgeStringInput();
 
-        int yearsToRetire = retirementAge - currentAge;
+        CalcClass calculations = new CalcClass();
 
-        System.out.println("You have "+yearsToRetire+" years left until you can retire.");
+        calculations.setYearsToRetire(userInfo.getCurrentAgeString(), userInfo.getRetirementAgeString());
+        calculations.setRetirementYear(userInfo.getCurrentYear());
 
-        int currentYear = Year.now().getValue();
-        int retirementYear = currentYear + yearsToRetire;
+        OutputClass systemOut = new OutputClass();
 
-        System.out.println("It's "+currentYear+", so you can retire in "+retirementYear+".");
-
+        systemOut.yearsToRetirement(calculations.getYearsToRetire());
+        systemOut.retireWhen(userInfo.getCurrentYear(), calculations.getRetirementYear());
 
 
     }
