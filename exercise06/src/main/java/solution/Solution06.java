@@ -5,7 +5,6 @@ package solution;
  */
 
 public class Solution06 {
-
     /*
     Get 'currentAgeString' from user
     Get 'currentAgeString' from user

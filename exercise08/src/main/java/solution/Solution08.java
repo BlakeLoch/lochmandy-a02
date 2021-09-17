@@ -1,4 +1,8 @@
 package solution;
+/*
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 Blake Lochmandy
+ */
 
 public class Solution08 {
 
@@ -14,7 +18,6 @@ public class Solution08 {
         Print "'numberOfPeople' people with 'numberOfPizzas' pizzas ('numberOfSlices' slices)"
         Print "Each person gets 'slicesPerPerson' pieces of pizza."
         Print "There are 0 leftover pieces."
-
      */
 
     public static void main(String[] args) {

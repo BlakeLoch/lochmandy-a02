@@ -1,7 +1,10 @@
 package solution;
+/*
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 Blake Lochmandy
+ */
 
 public class Solution09 {
-
     /*
     Get 'lengthOfCeiling' from user
     Get 'widthOfCeiling' from user

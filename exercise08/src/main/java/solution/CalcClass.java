@@ -1,6 +1,11 @@
 package solution;
-
 /*
+ *  UCF COP3330 Fall 2021 Assignment 2 Solution
+ *  Copyright 2021 Blake Lochmandy
+ */
+
+public class CalcClass {
+    /*
     CalcClass
         method calcNumberOfSlices(int numberOfPizzas, int slicesPerPizza)
             return numberOfPizzas * slicesPerPizza
@@ -8,10 +13,7 @@ package solution;
             return numberOfSlices / numberOfPeople
         method calcLeftoverSlices(int numberOfSlices, int slicesPerPerson, int numberOfPeople)
             return return numberOfSlices - (slicesPerPerson * numberOfPeople)
-
     */
-
-public class CalcClass {
 
     public int calcNumberOfSlices(int numberOfPizzas, int slicesPerPizza){
         return numberOfPizzas * slicesPerPizza;

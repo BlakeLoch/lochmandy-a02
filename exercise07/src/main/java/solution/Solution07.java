@@ -4,11 +4,7 @@ package solution;
  *  Copyright 2021 Blake Lochmandy
  */
 
-
-
-
 public class Solution07 {
-
     /*
     Get 'lengthOfRoom' from user
     Get 'widthOfRoom' from user
