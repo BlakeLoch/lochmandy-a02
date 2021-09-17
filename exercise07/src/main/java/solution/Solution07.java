@@ -10,31 +10,17 @@ package solution;
 public class Solution07 {
 
     /*
-    InputClass
-        method setDimensionOfRoom()
-            if Length
-            print "What is the length of the room in feet?"
-            'lengthOfRoom' = get input from user
-            if Width
-            print "What is the width of the room in feet?"
-            'widthOfRoom' = get input from user
+    Get 'lengthOfRoom' from user
+    Get 'widthOfRoom' from user
 
-        method ConfirmDimensions()
-            print "You entered dimensions of 'lengthOfRoom' feet by 'widthOfRoom' feet."
+    Print "You entered dimensions of 'lengthOfRoom' feet by 'widthOfRoom' feet."
 
-    CalcClass
-       double 'conversionFactor' = 0.09290304
-        method CalcAreaInFeet(int 'lengthInFeet', int 'widthInFeet')
-            return 'lengthInFeet' * 'widthInFeet'
-        method CalcAreaInMeters(int 'areaInFeet')
-            return 'areaFeet' * 'conversionFactor'
+    Calculate 'areaInSquareFeet'
+    Calculate 'areaInSquareMeters'
 
-    OutputClass
-        print "The area is"
-        method printAreaFeet(int 'areaInFeet')
-            print 'squareFeet' + "square feet"
-        method printAreaInMeters(int 'areaInMeters')
-            print 'squareMeters'_(to 3 decimal places) + "square meters"
+    Print "The area is"
+          "'squareFeet' square feet"
+          "'squareMeters' square meters"
      */
 
     public static void main(String[] args) {
@@ -46,7 +32,7 @@ public class Solution07 {
         int lengthOfRoom = userInput.setDimensionOfRoom("L");
         int widthOfRoom = userInput.setDimensionOfRoom("W");
 
-        userInput.confirmDimensions(lengthOfRoom, widthOfRoom);
+        output.confirmDimensions(lengthOfRoom, widthOfRoom);
 
         int areaInSquareFeet = calculations.calcAreaInFeet(lengthOfRoom, widthOfRoom);
         double areaInSquareMeters = calculations.calcAreaInMeters(areaInSquareFeet);

@@ -2,6 +2,14 @@ package solution;
 
 public class CalcClass {
 
+    /*
+    CalcClass
+     'currentAge' = parse 'currentAgeString' as integer
+     'retirementAge' = parse 'retirementAgeString' as integer
+     'yearsToRetire' = 'retirementAge' - 'currentAge'
+     'retirementYear' = 'currentYear' + 'yearsToRetire'
+     */
+
     private int yearsToRetire;
     private int retirementYear;
 

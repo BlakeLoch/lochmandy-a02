@@ -4,6 +4,18 @@ import java.util.Scanner;
 
 public class InputClass {
 
+    /*
+    InputClass
+        method setDimensionOfRoom()
+            if Length
+            print "What is the length of the room in feet?"
+            'lengthOfRoom' = get input from user
+            if Width
+            print "What is the width of the room in feet?"
+            'widthOfRoom' = get input from user
+
+     */
+
     private static final Scanner input = new Scanner(System.in);
 
     public int setDimensionOfRoom(String dimension) {
@@ -19,9 +31,7 @@ public class InputClass {
         return Integer.parseInt(input.nextLine());
     }
 
-    public void confirmDimensions(int length, int width) {
-        System.out.println("You entered dimensions of "+length+" feet by "+width+" feet.");
-    }
+
 
 
 

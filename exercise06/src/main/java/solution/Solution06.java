@@ -7,22 +7,14 @@ package solution;
 public class Solution06 {
 
     /*
-    InputClass
-     Print "What is your current age?"
-     'currentAgeString' = read input from user
-     Print "At what age would you like to retire?"
-     'retirementAgeString' = read input from user
-     'currentYear' = get current year
+    Get 'currentAgeString' from user
+    Get 'currentAgeString' from user
 
-     CalcClass
-     'currentAge' = parse 'currentAgeString' as integer
-     'retirementAge' = parse 'retirementAgeString' as integer
-     'yearsToRetire' = 'retirementAge' - 'currentAge'
-     'retirementYear' = 'currentYear' + 'yearsToRetire'
+    Calculate 'yearsToRetire'
+    Calculate 'retirementYear'
 
-     OutputClass
      Print "You have 'yearsToRetire' years left until you can retire."
-     print "It's 'currentYear', so you can retire in 'retirementYear'."
+     Print "It's 'currentYear', so you can retire in 'retirementYear'."
      */
 
     public static void main(String[] args) {

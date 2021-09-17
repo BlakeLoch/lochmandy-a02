@@ -5,6 +5,16 @@ import java.time.Year;
 
 public class InputClass {
 
+    /*
+    InputClass
+     Print "What is your current age?"
+     'currentAgeString' = read input from user
+     Print "At what age would you like to retire?"
+     'retirementAgeString' = read input from user
+     'currentYear' = get current year
+     */
+
+
     Scanner input = new Scanner(System.in);
     private String currentAgeString;
     private String retirementAgeString;
