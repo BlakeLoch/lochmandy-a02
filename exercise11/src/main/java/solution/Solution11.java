@@ -10,7 +10,7 @@ public class Solution11 {
         'exchangeRate' = get from user input
 
         'dollarAmount' = calcDollarAmount(euroAmount, exchangeRate)
-        'outputString' = calculations.buildOutputString(euroAmount, exchangeRate, dollarAmount)
+        'outputString' = buildOutputString(euroAmount, exchangeRate, dollarAmount)
 
         print "'euroAmount' euros at an exchange rate of 'exchangeRate' is (return)
                 'dollarAmount' U.S. dollars."
