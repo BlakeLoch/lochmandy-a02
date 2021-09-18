@@ -21,8 +21,8 @@ public class Solution14 {
         CalcClass calculations = new CalcClass();
         OutputClass output = new OutputClass();
 
-        double orderAmount = userInput.GetOrderAmountFromUser();
-        String state = userInput.GetStateFromUser();
+        double orderAmount = userInput.getOrderAmountFromUser();
+        String state = userInput.getStateFromUser();
 
         double tax = calculations.calcTax(orderAmount);
         double total = calculations.calcTotal(orderAmount, tax);

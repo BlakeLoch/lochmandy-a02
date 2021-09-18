@@ -7,15 +7,21 @@ package solution;
 import java.util.Scanner;
 
 public class InputClass {
+    /*
+    method getOrderAmountFromUser()
+        return user input
+    method getStateFromUser
+        return user input
+     */
 
     private static final Scanner input = new Scanner(System.in);
 
-    public double GetOrderAmountFromUser() {
+    public double getOrderAmountFromUser() {
         System.out.print("What is the order amount? ");
         return Double.parseDouble(input.nextLine());
     }
 
-    public String GetStateFromUser() {
+    public String getStateFromUser() {
         System.out.print("What is the state? ");
         return input.nextLine();
     }
