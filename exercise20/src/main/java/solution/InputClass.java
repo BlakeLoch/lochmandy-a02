@@ -11,9 +11,10 @@ public class InputClass {
     method getOrderAmountFromUser()
         print "What is the order amount?"
         return user input
-    method getStateFromUser
-        print "What is the state?"
+    method getLocationFromUser(location)
+        print "What 'location' do you live in?"
         return user input
+
      */
 
     private static final Scanner input = new Scanner(System.in);
@@ -24,7 +25,18 @@ public class InputClass {
     }
 
     public String getStateFromUser() {
-        System.out.print("What is the state? ");
+        System.out.print("What state do you live in? ");
         return input.nextLine();
     }
+
+    public String getCountyFromUser(String state) {
+        if (state.equals("Wisconsin")) {
+            System.out.print("What county do you live in? ");
+            return input.nextLine();
+        } else{
+            return "";
+        }
+    }
 }
+
+
