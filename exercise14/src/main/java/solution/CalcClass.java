@@ -7,11 +7,11 @@ package solution;
 public class CalcClass {
     /*
     method calcTax('orderAmount')
-        return orderAmount * TAX_RATE rounded up to 2 decimal places
+        return 'orderAmount' * 'TAX_RATE' rounded up to 2 decimal places
     method calcTotal('orderAmount', 'tax')
-        return orderAmount + tax
+        return 'orderAmount' + 'tax'
     method buildOutputStatement('orderAmount', 'tax', 'total', 'state')
-        if state = WI
+        if 'state' = WI
             create string
             add to string "The subtotal is 'orderAmount' \n The tax is 'tax'
         add to string "The total is "+('total' (if wisconsin) or  'orderAmount' (if not))

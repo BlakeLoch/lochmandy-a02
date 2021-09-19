@@ -7,8 +7,8 @@ package solution;
 public class CalcClass {
 
     /*
-    method validateUser(username, password)
-        if username and password match stored values
+    method validateUser('username', 'password')
+        if 'username' and 'password' match stored values
             return "Welcome"
         if they don't
             return "I don't know you."

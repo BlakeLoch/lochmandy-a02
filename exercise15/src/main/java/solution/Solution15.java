@@ -6,12 +6,12 @@ package solution;
 
 public class Solution15 {
     /*
-    Prompt user for username
-    Prompt user for password
+    Prompt user for 'username'
+    Prompt user for 'password'
 
-    If username and password match
+    If 'username' and 'password' match stored values
         Print "Welcome!"
-    If username and password don't match
+    If 'username' and 'password' don't match stored values
         Print "I don't know you."
 
      */

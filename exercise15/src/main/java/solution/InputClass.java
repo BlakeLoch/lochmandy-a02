@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class InputClass {
     /*
-    method getInputFromUser(field)
+    method getInputFromUser('field')
         print "What is the 'field'? "
         return user input
      */

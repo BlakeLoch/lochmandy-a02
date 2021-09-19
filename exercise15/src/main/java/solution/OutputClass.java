@@ -6,8 +6,8 @@ package solution;
 
 public class OutputClass {
     /*
-    method printOutputString(outputString)
-        print outputString
+    method printOutputString('outputString')
+        print 'outputString'
      */
 
     public void printOutputString(String outputString) {

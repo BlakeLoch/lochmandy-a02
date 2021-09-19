@@ -26,7 +26,7 @@ public class Solution13 {
 
         double amountAccrued = calculations.calcAmountAccrued(principal, interestRate, numberOfYears, compoundsPerYear);
 
-        output.printOutputStatement(principal, interestRate, numberOfYears, compoundsPerYear, amountAccrued);
+        output.printOutputString(principal, interestRate, numberOfYears, compoundsPerYear, amountAccrued);
     }
 
 }

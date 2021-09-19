@@ -8,7 +8,7 @@ public class Solution16 {
     /*
     'age' = get user input
 
-    'outputString' = buildOutputString(age)
+    'outputString' = buildOutputString('age')
 
     Print 'outputString'
 

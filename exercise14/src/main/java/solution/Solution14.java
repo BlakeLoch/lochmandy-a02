@@ -9,11 +9,11 @@ public class Solution14 {
     'orderAmount' = get input from user
     'state' = get input from user
 
-    tax = calcTax('orderAmount')
-    total = calcTax('orderAmount', 'tax')
-    outputString = buildOutputStatement('orderAmount', 'tax', 'total', 'state')
+    'tax' = calcTax('orderAmount')
+    'total' = calcTax('orderAmount', 'tax')
+    'outputString' = buildOutputStatement('orderAmount', 'tax', 'total', 'state')
 
-    print outputString
+    print 'outputString'
      */
 
     public static void main(String[] args) {

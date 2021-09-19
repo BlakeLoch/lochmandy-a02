@@ -6,7 +6,7 @@ package solution;
 
 public class OutputClass {
     /*
-        method printOutputString(outputString)
+        method printOutputString('outputString')
             print 'outputString'
          */
 

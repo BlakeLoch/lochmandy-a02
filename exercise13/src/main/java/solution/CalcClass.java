@@ -8,7 +8,7 @@ public class CalcClass {
     /*
     method calcAmountAccrued('principal', 'interestRate', 'numberOfYears', 'compoundsPerYear')
         interestRate /= 100
-        return principal * (1 + interestRate / compoundsPerYear) ^ (compoundsPerYear * numberOfYears) rounded up to 2 decimal places
+        return 'principal' * (1 + 'interestRate' / 'compoundsPerYear') ^ ('compoundsPerYear' * 'numberOfYears') rounded up to 2 decimal places
      */
 
     public double calcAmountAccrued(double principal, double interestRate, int numberOfYears, int compoundsPerYear) {

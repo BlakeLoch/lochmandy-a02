@@ -6,7 +6,7 @@ package solution;
 
 public class CalcClass {
     /*
-    method buildOutputString(age)
+    method buildOutputString('age')
        if 16 or older
            "You are old enough to legally drive."
        if under 16
