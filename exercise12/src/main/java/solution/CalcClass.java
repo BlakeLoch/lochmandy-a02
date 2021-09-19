@@ -14,6 +14,7 @@ public class CalcClass {
 
   public double calcAmountAccrued(double principal, double interestRate, int numberOfYears) {
     interestRate /= 100;
-    return Math.ceil(principal * (1 + interestRate * numberOfYears) * 100) / 100;
+    double amountAccrued = principal * (1 + interestRate * numberOfYears);
+    return Math.ceil(amountAccrued * 100) / 100;
   }
 }

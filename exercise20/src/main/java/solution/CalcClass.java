@@ -41,8 +41,8 @@ public class CalcClass {
     } else if (state.equals("Illinois")) {
       taxRate = 0.08;
     }
-
-    return Math.ceil(orderAmount * taxRate * 100) / 100;
+    double tax = (int) (orderAmount * taxRate * 10000) / 100.0;
+    return Math.ceil(tax) / 100;
   }
 
   public double calcTotal(double orderAmount, double tax) {

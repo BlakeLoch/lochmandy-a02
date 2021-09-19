@@ -22,8 +22,8 @@ public class CalcClass {
   private static final double TAX_RATE = 0.055;
 
   public double calcTax(double orderAmount) {
-
-    return Math.ceil(orderAmount * TAX_RATE * 100) / 100;
+    double tax = (int) (orderAmount * TAX_RATE * 10000) / 100.0;
+    return Math.ceil(tax) / 100;
   }
 
   public double calcTotal(double orderAmount, double tax) {

@@ -15,7 +15,8 @@ public class CalcClass {
   public double calcAmountAccrued(double principal, double interestRate, int numberOfYears,
       int compoundsPerYear) {
     interestRate /= 100;
-    return Math.ceil((principal * Math.pow((1 + interestRate / compoundsPerYear),
-        (compoundsPerYear * numberOfYears))) * 100) / 100;
+    double amountAccrued = (principal * Math.pow((1 + interestRate / compoundsPerYear),
+        (compoundsPerYear * numberOfYears)));
+    return Math.ceil(amountAccrued * 100) / 100;
   }
 }
