@@ -1,18 +1,21 @@
-package solution;
 /*
  *  UCF COP3330 Fall 2021 Assignment 2 Solution
  *  Copyright 2021 Blake Lochmandy
  */
 
-public class CalcClass {
-    /*
-    method calcAmountAccrued('principal', 'interestRate', 'numberOfYears', 'compoundsPerYear')
-        interestRate /= 100
-        return 'principal' * (1 + 'interestRate' / 'compoundsPerYear') ^ ('compoundsPerYear' * 'numberOfYears') rounded up to 2 decimal places
-     */
+package solution;
 
-    public double calcAmountAccrued(double principal, double interestRate, int numberOfYears, int compoundsPerYear) {
-        interestRate /= 100;
-        return Math.ceil((principal * Math.pow((1 + interestRate / compoundsPerYear), (compoundsPerYear * numberOfYears))) * 100) / 100;
-    }
+public class CalcClass {
+  /*
+   * method calcAmountAccrued('principal', 'interestRate', 'numberOfYears', 'compoundsPerYear')
+   *   interestRate /= 100
+   *   return 'principal' * (1 + 'interestRate' / 'compoundsPerYear') ^ ('compoundsPerYear' * 'numberOfYears') rounded up to 2 decimal places
+   */
+
+  public double calcAmountAccrued(double principal, double interestRate, int numberOfYears,
+      int compoundsPerYear) {
+    interestRate /= 100;
+    return Math.ceil((principal * Math.pow((1 + interestRate / compoundsPerYear),
+        (compoundsPerYear * numberOfYears))) * 100) / 100;
+  }
 }

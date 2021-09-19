@@ -1,31 +1,31 @@
-package solution;
 /*
  *  UCF COP3330 Fall 2021 Assignment 2 Solution
  *  Copyright 2021 Blake Lochmandy
  */
 
+package solution;
+
 public class Solution16 {
-    /*
-    'age' = get user input
+  /*
+   * 'age' = get user input
+   *
+   * 'outputString' = buildOutputString('age')
+   *
+   * Print 'outputString'
+   */
 
-    'outputString' = buildOutputString('age')
+  public static void main(String[] args) {
 
-    Print 'outputString'
+    InputClass userInput = new InputClass();
+    CalcClass calculations = new CalcClass();
+    OutputClass output = new OutputClass();
 
-     */
+    int age = userInput.getAgeFromUser();
 
-    public static void main(String[] args) {
+    String outputString = calculations.buildOutputString(age);
 
-        InputClass userInput = new InputClass();
-        CalcClass calculations = new CalcClass();
-        OutputClass output = new OutputClass();
-
-        int age = userInput.getAgeFromUser();
-
-        String outputString = calculations.buildOutputString(age);
-
-        output.printOutputString(outputString);
-    }
+    output.printOutputString(outputString);
+  }
 
 
 }

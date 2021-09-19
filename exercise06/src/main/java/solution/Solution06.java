@@ -1,39 +1,40 @@
-package solution;
 /*
  *  UCF COP3330 Fall 2021 Assignment 2 Solution
  *  Copyright 2021 Blake Lochmandy
  */
 
+package solution;
+
 public class Solution06 {
-    /*
-    Get 'currentAgeString' from user
-    Get 'currentAgeString' from user
+  /*
+   * Get 'currentAgeString' from user
+   * Get 'currentAgeString' from user
+   *
+   * Calculate 'yearsToRetire'
+   * Calculate 'retirementYear'
+   *
+   * Print "You have 'yearsToRetire' years left until you can retire."
+   * Print "It's 'currentYear', so you can retire in 'retirementYear'."
+   */
 
-    Calculate 'yearsToRetire'
-    Calculate 'retirementYear'
+  public static void main(String[] args) {
 
-     Print "You have 'yearsToRetire' years left until you can retire."
-     Print "It's 'currentYear', so you can retire in 'retirementYear'."
-     */
+    InputClass userInfo = new InputClass();
 
-    public static void main(String[] args) {
+    userInfo.currentAgeStringInput();
+    userInfo.retirementAgeStringInput();
 
-        InputClass userInfo = new InputClass();
+    CalcClass calculations = new CalcClass();
 
-        userInfo.currentAgeStringInput();
-        userInfo.retirementAgeStringInput();
+    calculations.setYearsToRetire(userInfo.getCurrentAgeString(),
+        userInfo.getRetirementAgeString());
+    calculations.setRetirementYear(userInfo.getCurrentYear());
 
-        CalcClass calculations = new CalcClass();
+    OutputClass output = new OutputClass();
 
-        calculations.setYearsToRetire(userInfo.getCurrentAgeString(), userInfo.getRetirementAgeString());
-        calculations.setRetirementYear(userInfo.getCurrentYear());
+    output.yearsToRetirement(calculations.getYearsToRetire());
+    output.retireWhen(userInfo.getCurrentYear(), calculations.getRetirementYear());
 
-        OutputClass systemOut = new OutputClass();
-
-        systemOut.yearsToRetirement(calculations.getYearsToRetire());
-        systemOut.retireWhen(userInfo.getCurrentYear(), calculations.getRetirementYear());
-
-
-    }
+  }
 
 }

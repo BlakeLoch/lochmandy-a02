@@ -1,31 +1,31 @@
-package solution;
 /*
  *  UCF COP3330 Fall 2021 Assignment 2 Solution
  *  Copyright 2021 Blake Lochmandy
  */
 
+package solution;
+
 public class Solution21 {
-    /*
-    'monthNumber' = get input from user
+  /*
+   * 'monthNumber' = get input from user
+   *
+   * 'monthName' = chooseMonthName('monthNumber')
+   *
+   * printNameOfMonth(monthName)
+   */
 
-    'monthName' = chooseMonthName('monthNumber')
+  public static void main(String[] args) {
 
-    printNameOfMonth(monthName)
-     */
+    InputClass userInput = new InputClass();
+    CalcClass calculations = new CalcClass();
+    OutputClass output = new OutputClass();
 
-    public static void main(String[] args) {
+    int monthNumber = userInput.getMonthNumberFromUser();
 
+    String monthName = calculations.chooseMonthName(monthNumber);
 
-        InputClass userInput = new InputClass();
-        CalcClass calculations = new CalcClass();
-        OutputClass output = new OutputClass();
+    output.printNameOfMonth(monthName);
 
-        int monthNumber = userInput.getMonthNumberFromUser();
+  }
 
-        String monthName = calculations.chooseMonthName(monthNumber);
-
-        output.printNameOfMonth(monthName);
-
-    }
-
-    }
+}
